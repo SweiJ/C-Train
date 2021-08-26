@@ -1,0 +1,24 @@
+#pragma once
+#define _CRT_SECURE_NO_DEPRECATE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+#define ROW 3
+#define COL 3
+
+// ≥ı ºªØ∆Â≈Ã
+void InitBoard(char board[ROW][COL], int row, int col);
+
+// œ‘ æ∆Â≈Ã
+void DisplayBoard(char board[ROW][COL], int row, int col);
+
+// ÕÊº““∆∂Ø
+void PlayerMove(char board[ROW][COL], int row, int col);
+
+// µÁƒ‘ÕÊº““∆∂Ø
+void ComputerMove(char board[ROW][COL], int row, int col);
+
+// ≈–∂œ ‰”Æ
+char IsWin(char board[ROW][COL], int row, int col);
