@@ -81,7 +81,7 @@
 //	}
 //}
 
-//#include <stdio.h>
+#include <stdio.h>
 //int main()
 //{
 //    int i = 0;
@@ -93,3 +93,63 @@
 //    }
 //    return 0;
 //}
+
+//int len(char* str) {
+//	char* i = str;
+//	int strLen;
+//	while (*str != '\0') str++;
+//	strLen = str - i;
+//	return strLen;
+//}
+//int main() {
+//	char a[20] = { 0 };
+//	char* p = a;
+//	int strLen;
+//	gets(a);
+//	strLen = len(p);
+//	printf("%d", strLen);
+//}
+
+
+//#include<stdio.h>
+//#include<assert.h>
+//char* mystrcpy(char* _Dest, const char* _Source)
+//{
+//    //检查传入参数的有效性
+//    assert(NULL != _Dest);
+//    assert(NULL != _Source);
+//    if (NULL == _Dest || NULL == _Source)
+//        return NULL;
+//    char* ret = _Dest;
+//    while ((*_Dest++ = *_Source++) != '\0');
+//    return ret;
+//}
+//int main()
+//{
+//	char S1[20] = "hello";
+//	char S2[20] = "world";
+//
+//	mystrcpy(S1, S2);
+//	printf("S1 = %s\n", S1);
+//
+//	return 0;
+//}
+
+#include<stdio.h>
+int main() {
+    int y, m;
+    while (scanf("%d %d", &y, &m) != EOF)
+    {
+        if (m == 4 || m == 6 || m == 9 || m == 11)
+            printf("30\n");
+        else if (m == 2)
+        {
+            if (((y % 4 == 0) && (y % 100 != 0)) || (y % 400 == 0))
+                printf("29\n");
+            else
+                printf("28\n");
+        }
+        else
+            printf("31\n");
+    }
+}
