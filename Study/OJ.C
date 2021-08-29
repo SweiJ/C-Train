@@ -135,21 +135,55 @@
 //	return 0;
 //}
 
-#include<stdio.h>
-int main() {
-    int y, m;
-    while (scanf("%d %d", &y, &m) != EOF)
-    {
-        if (m == 4 || m == 6 || m == 9 || m == 11)
-            printf("30\n");
-        else if (m == 2)
-        {
-            if (((y % 4 == 0) && (y % 100 != 0)) || (y % 400 == 0))
-                printf("29\n");
-            else
-                printf("28\n");
-        }
-        else
-            printf("31\n");
-    }
-}
+//#include<stdio.h>
+//int main() {
+//    int y, m;
+//    while (scanf("%d %d", &y, &m) != EOF)
+//    {
+//        if (m == 4 || m == 6 || m == 9 || m == 11)
+//            printf("30\n");
+//        else if (m == 2)
+//        {
+//            if (((y % 4 == 0) && (y % 100 != 0)) || (y % 400 == 0))
+//                printf("29\n");
+//            else
+//                printf("28\n");
+//        }
+//        else
+//            printf("31\n");
+//    }
+//}
+
+
+//#define N 10
+//int main() {
+//	int i, j, a[N][N] = { 0 };
+//	for (i = 0; i < N; i++) {
+//		a[i][i] = 1;
+//		a[i][0] = 1;
+//	}
+//	for (i = 2; i < N; i++)
+//		for (j = 1; j < i; j++)
+//			a[i][j] = a[i - 1][j] + a[i - 1][j - 1];
+//	for (i = 0; i < N; i++) {
+//		for (j = 0; j <= i; j++)
+//			printf("%d ", a[i][j]);
+//		printf("\n");
+//	}
+//}
+
+//int main()
+//{
+//	int murder[4] = { 0 };
+//
+//	int i;
+//	for (i = 0; i < 4; i++)
+//	{
+//		murder[i] = 1;
+//		if ((murder[0] != 1) + (murder[2] == 1) + (murder[3] == 1) + (murder[3] != 1) == 3)
+//			break;
+//		murder[i] = 0;
+//	}
+//	printf("%c", 'A' + i);
+//	return 0;
+//}
