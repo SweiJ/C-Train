@@ -209,3 +209,34 @@
 //	}
 //	printf("%s", arr);
 //}
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char arr[50] = { 0 };
+	char arr1[50] = { 0 };
+	gets(arr);
+	gets(arr1);
+	int i = 0, k, temp;
+	int arr_len = strlen(arr);
+	int arr1_len = strlen(arr);
+	k = arr_len;
+	while (k)
+	{
+		temp = arr[0];
+		for (i = 0; i < arr_len - 1; i++)
+		{
+			arr[i] = arr[i + 1];
+		}
+		arr[i] = temp;
+		if (strcmp(arr, arr1) == 0)
+		{
+			printf("1");
+			break;
+		}
+		k--;
+	}
+	if(k == 0)
+		printf("0");
+}
