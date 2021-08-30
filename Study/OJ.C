@@ -210,33 +210,77 @@
 //	printf("%s", arr);
 //}
 
-#include <stdio.h>
-#include <string.h>
-int main()
-{
-	char arr[50] = { 0 };
-	char arr1[50] = { 0 };
-	gets(arr);
-	gets(arr1);
-	int i = 0, k, temp;
-	int arr_len = strlen(arr);
-	int arr1_len = strlen(arr);
-	k = arr_len;
-	while (k)
-	{
-		temp = arr[0];
-		for (i = 0; i < arr_len - 1; i++)
-		{
-			arr[i] = arr[i + 1];
-		}
-		arr[i] = temp;
-		if (strcmp(arr, arr1) == 0)
-		{
-			printf("1");
-			break;
-		}
-		k--;
-	}
-	if(k == 0)
-		printf("0");
-}
+//#include <stdio.h>
+//#include <string.h>
+//int main()
+//{
+//	char arr[50] = { 0 };
+//	char arr1[50] = { 0 };
+//	gets(arr);
+//	gets(arr1);
+//	int i = 0, k, temp;
+//	int arr_len = strlen(arr);
+//	int arr1_len = strlen(arr);
+//	k = arr_len;
+//	while (k)
+//	{
+//		temp = arr[0];
+//		for (i = 0; i < arr_len - 1; i++)
+//		{
+//			arr[i] = arr[i + 1];
+//		}
+//		arr[i] = temp;
+//		if (strcmp(arr, arr1) == 0)
+//		{
+//			printf("1");
+//			break;
+//		}
+//		k--;
+//	}
+//	if(k == 0)
+//		printf("0");
+//}
+
+//int Find_Num(int arr[3][3], int k, int* pr, int* pc)
+//{
+//	int x = 0;
+//	int y = *pc - 1;
+//	while (x <= *pr - 1 && y >= 0)
+//	{
+//		if (arr[x][y] > k)//列减少
+//		{
+//			y--;
+//		}
+//		else if (arr[x][y] < k)//行增加
+//		{
+//			x++;
+//		}
+//		else
+//		{
+//			//返回下标
+//			*pr = x;
+//			*pc = y;
+//			return 1;
+//		}
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int arr[3][3] = { {1,2,3},{4,5,6},{7,8,9} };//定义一个3×3的数组
+//	int k = 0;
+//	scanf("%d", &k);
+//	int row = 3;
+//	int col = 3;
+//	int ret = Find_Num(arr, k, &row, &col);//传地址过去，可以获得下标
+//	if (ret == 1)
+//	{
+//		printf("找到了\n");
+//		printf("下标为：%d,%d", row, col);
+//	}
+//	else
+//	{
+//		printf("找不到\n");
+//	}
+//	return 0;
+//}
