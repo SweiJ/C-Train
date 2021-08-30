@@ -187,3 +187,25 @@
 //	printf("%c", 'A' + i);
 //	return 0;
 //}
+
+//#include <stdio.h>
+//#include <string.h>
+//int main()
+//{
+//	char arr[50] = { 0 };
+//	gets(arr);
+//	int i = 0, k = 0, temp;
+//	int len = strlen(arr);
+//	scanf("%d", &k);
+//	while (k)
+//	{
+//		temp = arr[0];
+//		for (i = 0; i < len - 1; i++)
+//		{
+//			arr[i] = arr[i + 1];
+//		}
+//		arr[i] = temp;
+//		k--;
+//	}
+//	printf("%s", arr);
+//}
