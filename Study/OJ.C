@@ -316,3 +316,46 @@
 //	printf("%f", sum);
 //}
 
+//#include<stdio.h> 
+//#include<stdlib.h> 
+//#include<math.h> 
+//#include<string.h> 
+//
+//int cmp1(const void* a, const void* b)
+//{
+//    return (*(int*)a - *(int*)b);//a>b ·µ»ØÕýÖµ 
+//}
+//
+//int cmp2(const void* a, const void* b)
+//{
+//    return(*(char*)a - *(char*)b);
+//}
+//int cmp3(const void* a, const void* b)
+//{
+//    if (fabs(*(double*)a - *(double*)b) < 1 * exp(-20))
+//        return 0;
+//    else
+//        return(((*(double*)a - *(double*)b) > 0) ? 1 : -1);
+//}
+//void main(void)
+//{
+//    int i;
+//    int num[10] = { 10,111,12,23,24,445,56,47,68,9 };
+//    char str[10] = { 'a','m','y','d','w','f','g','j','i','p' };
+//    double dec[10] = { 1.2,2.2,3.3,1.5,0.5,1.8,2.4,8.9,9.9,5.2 };
+//    
+//
+//    qsort(num, 10, sizeof(int), cmp1);
+//    qsort(str, 10, sizeof(char), cmp2);
+//    qsort(dec, 10, sizeof(double), cmp3);
+//
+//    for (i = 0; i < 10; i++)
+//        printf("%d ", num[i]);
+//    printf("\n");
+//    for (i = 0; i < 10; i++)
+//        printf("%c ", str[i]);
+//    printf("\n");
+//    for (i = 0; i < 10; i++)
+//        printf("%lf ", dec[i]);
+//}
+
