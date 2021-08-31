@@ -302,3 +302,17 @@
 //	c = Add(a, b);
 //	printf("%d", c);
 //}
+
+//int main() {
+//	int i, j, n; 
+// double sum = 0, mul = 1;
+//	printf("ÇëÊäÈë½×²ãÊı£º");
+//	scanf("%d", &n);
+//	for (i = 1; i <= n; i++)
+//	{
+//		mul *= i;
+//		sum += mul;
+//	}
+//	printf("%f", sum);
+//}
+
