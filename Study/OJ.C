@@ -378,3 +378,12 @@
 //		}
 //	}
 //}
+
+//int main() {
+//	int num, i, dayNum = 1;
+//	for (i = 1; i < 10; i++) {
+//		num = (dayNum+1)*2;
+//		dayNum = num;
+//	}
+//	printf("%d", num);
+//}
