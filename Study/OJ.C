@@ -359,3 +359,22 @@
 //        printf("%lf ", dec[i]);
 //}
 
+
+
+
+
+//int main() {
+//	for (int num = 2; num < 1000; num++) {
+//		int perfectNum = 0;
+//		for (int factor = 1; factor <= num / 2; factor++)
+//			if (num % factor == 0)
+//				perfectNum += factor;
+//		if (perfectNum == num) {
+//			printf("%d its factors are", num);
+//			for (int factor = 1; factor <= num / 2; factor++)
+//				if (num % factor == 0)
+//					printf("%d, ", factor);
+//			printf("\n");
+//		}
+//	}
+//}
