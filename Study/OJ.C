@@ -422,3 +422,57 @@
 //                    }
 //    return 0;
 //}
+
+//int cmp1(const void* a, const void* b)
+//{
+//    return (*(int*)a - *(int*)b);//a>b ·µ»ØÕýÖµ 
+//}
+//
+//int cmp2(const void* a, const void* b)
+//{
+//    return(*(char*)a - *(char*)b);
+//}
+//int cmp3(const void* a, const void* b)
+//{
+//    if (fabs(*(double*)a - *(double*)b) < 1 * exp(-20))
+//        return 0;
+//    else
+//        return(((*(double*)a - *(double*)b) > 0) ? 1 : -1);
+//}
+//void swap(char* buf1, char* buf2, int width)
+//{
+//	int i = 0;
+//	for (i = 0; i < width; i++)
+//	{
+//		char temp = *buf1;
+//		*buf1 = *buf2;
+//		*buf2 = temp;
+//		buf1++;
+//		buf2++;
+//	}
+//}
+//void BubbleSort(void* base, size_t num, size_t width, int (*cmp)(const void*, const void*))
+//{
+//	size_t i = 0;
+//	for (i = 0; i < num - 1; i++)
+//	{
+//		size_t j = 0;
+//		for (j = 0; j < num - 1; j++)
+//		{
+//			if (cmp((char*)base + j * width, (char*)base + (j + 1) * width) > 0)
+//			{
+//				swap((char*)base + j * width, (char*)base + (j + 1) * width, width);
+//			}
+//		}
+//	}
+//}
+//int main()
+//{
+//	int a[10] = { 1,23,4,5,5,45,35,45,436,6 };
+//	BubbleSort(a, 10, sizeof(a[0]), cmp1);
+//	int i = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d ", a[i]);
+//	}
+//}
