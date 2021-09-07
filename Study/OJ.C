@@ -477,13 +477,22 @@
 //	}
 //}
 
-int main()
-{
-	int a = 1;
-	char* p = (char*)&a;
-	if (*p == 1)
-		printf("小端");
-	else
-		printf("大端");
-	return 0;
-}
+//int main()
+//{
+//	int a = 1;
+//	char* p = (char*)&a;
+//	if (*p == 1)
+//		printf("小端");
+//	else
+//		printf("大端");
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a[] = { 1,2,3,4 };
+//	// 在内存中 存放 01 00 00 00 02 00 00 00 03 00 00 00 04 00 00 00
+//	int* str1 = (int*)(&a + 1); // 整个数组加一然后强制转换类型
+//
+//	printf("%x", str1[-1]);
+//}
