@@ -521,14 +521,37 @@
 //	pa++; // 
 //	printf("%s\n", *pa);
 //}
-int main()
-{
-	char* c[] = { "ENTER","NEW","POINT","FIRST" };
-	char** cp[] = { c + 3,c + 2,c + 1,c };
-	char*** cpp = cp;
-	printf("%s\n", **++cpp);
-	printf("%s\n", *-- * ++cpp + 3);
-	printf("%s\n", *cpp[-2] + 3);
-	printf("%s\n", cpp[-1][-1] + 1);
-	return 0;
-}
+//int main()
+//{
+//	char* c[] = { "ENTER","NEW","POINT","FIRST" };
+//	char** cp[] = { c + 3,c + 2,c + 1,c };
+//	char*** cpp = cp;
+//	printf("%s\n", **++cpp);
+//	printf("%s\n", *-- * ++cpp + 3);
+//	printf("%s\n", *cpp[-2] + 3);
+//	printf("%s\n", cpp[-1][-1] + 1);
+//	return 0;
+//}
+
+//#include<stdio.h>
+//#include<string.h>
+//void dao_xv(char* aa, int a)
+//{
+//	char b;
+//
+//	if (aa < aa + a)
+//	{
+//		b = *aa;
+//		*aa = *(aa + a);
+//		*(aa + a) = b;
+//		dao_xv(aa + 1, a - 2);
+//	}
+//}
+//int main()
+//{
+//	char aa[] = "abcdefg";
+//	int a = strlen(aa) - 1;
+//	dao_xv(aa, a);
+//	//printf("%c", *aa);
+//	printf("%s ", aa);
+//}
