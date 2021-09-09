@@ -555,3 +555,52 @@
 //	//printf("%c", *aa);
 //	printf("%s ", aa);
 //}
+
+//int is_left_move(char arr1[], char arr2[])
+//{
+//
+//}
+//int main()
+//{
+//	char arr1[] = "AABCD";
+//
+//	char arr2[] = "BCDAA";
+//	int ret = is_left_move(arr1, arr2);
+//	if (ret == 1)
+//		printf("YES\n");
+//	else
+//		printf("NO\n");
+//}
+
+//void find_k(int arr[3][3], int k, int* px, int* py)
+//{
+//	int x = 0;
+//	int y = *py - 1;
+//	while (x < *px && y >= 0)
+//	{
+//		if (arr[x][y] < k)
+//			x++;
+//		else if (arr[x][y] > k)
+//			y--;
+//		else
+//		{
+//			*px = x;
+//			*py = y;
+//			return;
+//		}
+//	}
+//	*px = -1;
+//	*py = -1;
+//}
+//int main()
+//{
+//	int arr[3][3] = { 1,2,3,4,5,6,7,8,9 };
+//	int k = 17;
+//	int x = 3;
+//	int y = 3;
+//	find_k(arr, k, &x, &y);
+//	if (x == -1 && y == -1)
+//		printf("’“≤ªµΩ\n");
+//	else
+//		printf("%d %d\n", x, y);
+//}
