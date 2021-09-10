@@ -604,3 +604,34 @@
 //	else
 //		printf("%d %d\n", x, y);
 //}
+
+//#include <assert.h>
+//char* my_strcpy(char* dest, const char* src)
+//{
+//	assert(dest);
+//	assert(src);
+//	char* ret = dest;
+//	while (*dest++ = *src++)
+//		;
+//	return ret;
+//}
+
+//int GreCommon(int a, int b) {
+//	int temp, r;
+//	if (b > a) {
+//		temp = a;
+//		a = b;
+//		b = temp;
+//	}
+//	while ((r = b % a) != 0) {
+//		b = a;
+//		a = r;
+//	}
+//	return a;
+//}
+//int main() {
+//	int a, b, Great;
+//	scanf("%d%d", &a, &b);
+//	Great = GreCommon(a, b);
+//	printf("%d", Great);
+//}
