@@ -635,3 +635,35 @@
 //	Great = GreCommon(a, b);
 //	printf("%d", Great);
 //}
+
+
+//int main() {
+//	int n[20] = { 0 };
+//	printf("input a 8 system\n");
+//	int a, i = 0, m;
+//	scanf("%d", &a);
+//	while (a) {
+//		if (a % 10 > 7) {
+//			printf("输入错误,重新输入！");
+//			scanf("%d", &a);
+//			continue;
+//		}
+//		m = a % 10;
+//		a = a / 10;
+//		if (m == 0) {
+//			int j = i;
+//			while (i < j + 3) {
+//				n[i] = 0;
+//				i++;
+//			}
+//		}
+//		while (m) {
+//			n[i] = m % 2;
+//			m = m / 2;
+//			i++;
+//		}
+//	}
+//	for (; i >= 0; i--) {
+//		printf("%d", n[i]);
+//	}
+//}
