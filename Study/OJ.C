@@ -667,3 +667,18 @@
 //		printf("%d", n[i]);
 //	}
 //}
+
+//int main() {
+//	int n[10] = { 0 };
+//	printf("input a 10 system\n");
+//	int a, i = 0;
+//	scanf("%d", &a);
+//	while (a) {
+//		n[i] = a % 2;
+//		a = a / 2;
+//		i++;
+//	}
+//	for (; i >= 0; i--) {
+//		printf("%d", n[i]);
+//	}
+//}
