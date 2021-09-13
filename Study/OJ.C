@@ -682,3 +682,23 @@
 //		printf("%d", n[i]);
 //	}
 //}
+
+//int isprime(int a) {
+//	for (int i = 2; i <= sqrt((double)a); i++) {
+//		if (a % i == 0)
+//			return 0;
+//	}
+//	return 1;
+//}
+//int main() {
+//	int num, flag;
+//	scanf("%d", &num);
+//	for (int i = 2; i < num / 2; i++) {
+//		if (isprime(i) == 1 && isprime(num - i) == 1) {
+//			printf("%d + %d = %d\n", i, num - i, num);
+//			flag = 1;
+//		}
+//	}
+//	if (flag == 0)
+//		printf("do not have prime!");
+//}
