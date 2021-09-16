@@ -703,26 +703,68 @@
 //		printf("do not have prime!");
 //}
 
-#include<string.h>
-#include<assert.h>
-char* my_strcat(char* dest, char* src)
-{
-	assert(dest && src);
-	char* ret = dest;
-	while (*dest)
-		dest++;
-	while (*dest++ = *src++)
-	{
-		;
-	}
-	return ret;
-}
-int main()
-{
-	char arr1[20] = "abc";
-	char arr2[] = { 'd','e','f','\0' };
-	my_strcat(arr1, arr2);
+//#include<string.h>
+//#include<assert.h>
+//char* my_strcat(char* dest, char* src)
+//{
+//	assert(dest && src);
+//	char* ret = dest;
+//	while (*dest)
+//		dest++;
+//	while (*dest++ = *src++)
+//	{
+//		;
+//	}
+//	return ret;
+//}
+//int main()
+//{
+//	char arr1[20] = "abc";
+//	char arr2[] = { 'd','e','f','\0' };
+//	my_strcat(arr1, arr2);
+//
+//	printf("%s", arr1);
+//	return 0;
+//}
 
-	printf("%s", arr1);
-	return 0;
+//#include<string.h>
+//int main()
+//{
+//	char arr1[20] = "abcdefghi";
+//	char arr2[] = "xxxx";
+//	strncpy(arr1, arr2, 2);
+//	printf("%s\n", arr1);
+//	return 0;
+//}
+
+//#include<assert.h>
+//void* my_memmove(void* dst, const void* src, int count)
+//{
+//    assert(dst);
+//    assert(src);
+//    assert(count > 0);
+//    char* ret = (char*)dst;
+//    if ((dst > src) && (dst < (char*)src + count))
+//    {
+//        //从后往前拷贝
+//        src = (char*)src + count - 1;
+//        dst = (char*)dst + count - 1;
+//        while (count--)
+//        {
+//            *(char*)dst = *(char*)src;
+//            dst = (char*)dst - 1;
+//            src = (char*)src - 1;
+//        }
+//    }
+//    else
+//    {
+//        //从前往后拷贝
+//        while (count--)
+//        {
+//            *(char*)dst = *(char*)src;
+//            src = (char*)src + 1;
+//            dst = (char*)dst + 1;
+//        }
+//    }
+//    return ret;
 }
