@@ -767,4 +767,45 @@
 //        }
 //    }
 //    return ret;
-}
+//}
+//int main()
+//{
+//    char arr[] = "abcdefg";
+//    char* ret = my_memmove(arr + 1, arr, 3);
+//    printf("%s", ret);
+//    return 0;
+//}
+
+//#include<stddef.h>
+//struct S1
+//{
+//	char c1;
+//	int i;
+//	char c2;
+//};
+//
+//int main()
+//{
+//	printf("%u\n", offsetof(struct S1, c1));
+//	printf("%u\n", offsetof(struct S1, i));
+//	printf("%u\n", offsetof(struct S1, c2));
+//
+//	return 0;
+//}
+
+// 位段是可以节省空间的
+// 位段 - 二进制位
+
+//struct A
+//{
+//	int _a : 2;
+//	int _b : 5;
+//	int _c : 10;
+//	int _d : 30;
+//};
+//
+//int main()
+//{
+//	printf("%d\n", sizeof(struct A));
+//	return 0;
+//}
