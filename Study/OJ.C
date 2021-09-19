@@ -80,8 +80,7 @@
 //		printf("%d ", arr[i]);
 //	}
 //}
-
-#include <stdio.h>
+// 
 //int main()
 //{
 //    int i = 0;
@@ -358,10 +357,6 @@
 //    for (i = 0; i < 10; i++)
 //        printf("%lf ", dec[i]);
 //}
-
-
-
-
 
 //int main() {
 //	for (int num = 2; num < 1000; num++) {
@@ -808,4 +803,131 @@
 //{
 //	printf("%d\n", sizeof(struct A));
 //	return 0;
+//}
+
+//#include<assert.h>
+//#include <stdio.h>
+//char* my_strcat(char* dest, const char* src)
+//{
+//	assert(dest && src);
+//
+//	char* ret = dest;
+//	while (*dest)
+//		dest++;
+//	while (*dest++ = *src++)
+//		;
+//
+//	return ret;
+//}
+//int main()
+//{
+//	char arr1[20] = "abcd";
+//
+//	my_strcat(arr1, "efg");
+//	printf("%s", arr1);
+//}
+
+//#include<stdio.h>
+//#include<assert.h>
+//
+//int my_strcmp(const char* s1, const char* s2)
+//{
+//	assert(s1 && s2);
+//	while (*s1 == *s2)
+//	{
+//		if (*s1 == '\0')
+//			return 0;
+//		s1++;
+//		s2++;
+//	}
+//	return *s1 - *s2;
+//}
+//int main()
+//{
+//	char arr1[] = "abcdef";
+//	char arr2[] = "abcdef";
+//	int ret = my_strcmp(arr1, arr2);
+//	if (ret < 0)
+//		printf("<\n");
+//	else if (ret > 0)
+//		printf(">\n");
+//	else
+//		printf("=\n");
+//}
+
+//#include<stdio.h>
+//#include<assert.h>
+//char* my_strcpy(char* dest, char* src)
+//{
+//	char* ret = dest;
+//	assert(dest && src);
+//	while ((*dest++ = *src++) != '\0')
+//		;
+//
+//	return ret;
+//}
+//
+//int main()
+//{
+//	char arr1[20] = "abcde";
+//	char arr2[] = "dfdssd";
+//
+//	my_strcpy(arr1, arr2);
+//	printf("%s", arr1);
+//}
+
+
+//#include<stdio.h>
+//#include<assert.h>
+//int my_strlen(char* s1)
+//{
+//	assert(s1);
+//	char* p = s1;
+//	while (*s1 != '\0')
+//		s1++;
+//	return s1 - p;
+//}
+//int main()
+//{
+//	char arr1[] = "abcdef";
+//
+//	printf("%d", my_strlen(arr1));
+//}
+
+//#include<stdio.h>
+//#include<assert.h>
+//char* my_strstr(const char* str1, const char* str2)
+//{
+//	assert(str1 && str2);
+//	char* s1;
+//	char* s2;
+//	char* cp = str1;
+//	if (*str2 == '\0')
+//		return str1;
+//	while (*cp)
+//	{
+//		s1 = cp;
+//		s2 = str2;
+//
+//		while (*s1 != '\0' && *s2 != '\0' && *s1 == *s2)
+//		{
+//			s1++;
+//			s2++;
+//		}
+//		if (*s2 == '\0')
+//			return cp;
+//		cp++;
+//	}
+//	return NULL;
+//}
+//int main()
+//{
+//	char arr1[] = "abcdef";
+//	char arr2[] = "bc";
+//
+//	char* ret = my_strstr(arr1, arr2);
+//	if (ret == NULL)
+//		printf("ÕÒ²»µ½£¡\n");
+//	else
+//		printf("%s\n", ret);
 //}
