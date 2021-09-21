@@ -992,3 +992,16 @@
 //		printf("%d ", arr[i]);
 //	return 0;
 //}
+
+//#include<stdio.h>
+//typedef struct {
+//	int a;
+//	char b;
+//	short c;
+//	short d;
+//}AA;
+//
+//int main()
+//{
+//	printf("%d", sizeof(AA));
+//}
