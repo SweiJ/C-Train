@@ -14,24 +14,46 @@
 //}
 
 
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
-void GetMemory(char** p)
-{
-	*p = (char*)malloc(100);
-}
-void Test(void)
-{
-	char* str = NULL;
-	GetMemory(&str);
-	strcpy(str, "Hello world");
-	printf("%s", str);
-	free(str);
-	str = NULL;
-}
-int main()
-{
-	Test();
-	return 0;
-}
+//#include<stdio.h>
+//#include<string.h>
+//#include<stdlib.h>
+//void GetMemory(char** p)
+//{
+//	*p = (char*)malloc(100);
+//}
+//void Test(void)
+//{
+//	char* str = NULL;
+//	GetMemory(&str);
+//	strcpy(str, "Hello world");
+//	printf("%s", str);
+//	free(str);
+//	str = NULL;
+//}
+//int main()
+//{
+//	Test();
+//	return 0;
+//}
+
+
+//#include<stdio.h>
+//#include<string.h>
+//#include<stdlib.h>
+//void Test()
+//{
+//	char* str = (char*)malloc(100);
+//	strcpy(str, "hello");
+//	free(str);
+//	if (str != NULL)
+//	{
+//		strcpy(str, "world");
+//		printf(str);
+//	}
+//}.
+//
+//int main()
+//{
+//	Test();
+//	return 0;
+//}
