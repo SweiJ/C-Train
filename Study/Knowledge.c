@@ -57,3 +57,10 @@
 //	Test();
 //	return 0;
 //}
+
+//#include<stdio.h>
+//
+//int main()
+//{
+//	printf("%o", 010 << 1);
+//}
