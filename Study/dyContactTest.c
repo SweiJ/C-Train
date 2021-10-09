@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
-#include "contact.h"
+#include "dyContact.h"
 
 void menu()
 {
@@ -27,7 +27,7 @@ int main()
 	int input = 0;
 
 	struct Contact con;
-
+	// 初始化通讯录
 	InitContact(&con);
 
 	do
@@ -56,6 +56,7 @@ int main()
 			SortContact(&con);
 			break;
 		case EXIT:
+			DestoryContact(&con);
 			printf("退出通讯录\n");
 			break;
 		default:

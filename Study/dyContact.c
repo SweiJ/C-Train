@@ -1,36 +1,50 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
-#include "contact.h"
+#include "dyContact.h"
 
 void InitContact(struct Contact* pc)
 {
 	pc->sz = 0;
-	memset(pc->data, 0, sizeof(pc->data));
+	pc->data = (struct PeoInfo*)malloc(DEFAULT_SZ * sizeof(struct PeoInfo));
+	pc->capacity = DEFAULT_SZ;
 }
 
 void AddContact(struct Contact* pc)
 {
-	struct PeoInfo tmp = { 0 };
-	if (pc->sz == MAX)
+	if (pc->sz == pc->capacity)
 	{
-		printf("通讯录满了！\n");
+		struct PeoInfo* ptr = realloc(pc->data, (pc->capacity + 2)*sizeof(struct PeoInfo));
+		if (ptr != NULL)
+		{
+			pc->data = ptr;
+			pc->capacity += 2;
+			printf("增容成功！");
+		}
+		else
+		{
+			return;
+		}
 	}
-	else
-	{
-		printf("请输入名字：>");
-		scanf("%s", tmp.name);
-		printf("请输入年龄：>");
-		scanf("%d", &tmp.age);
-		printf("请输入性别：>");
-		scanf("%s", tmp.sex);
-		printf("请输入电话：>");
-		scanf("%s", tmp.tele);
-		printf("请输入地址：>");
-		scanf("%s", tmp.addr);
-		
-		pc->data[pc->sz] = tmp;
-		pc->sz++;
-	}
+	printf("请输入名字：>");
+	scanf("%s", pc->data[pc->sz].name);
+	printf("请输入年龄：>");
+	scanf("%d", &pc->data[pc->sz].age);
+	printf("请输入性别：>");
+	scanf("%s", pc->data[pc->sz].sex);
+	printf("请输入电话：>");
+	scanf("%s", pc->data[pc->sz].tele);
+	printf("请输入地址：>");
+	scanf("%s", pc->data[pc->sz].addr);
+	pc->sz++;
+	printf("增加成功！");
+}
+
+void DestoryContact(struct Contact* pc)
+{
+	free(pc->data);
+	pc->data = NULL;
+	pc->capacity = 0;
+	pc->sz = 0;
 }
 
 void ShowContact(struct Contact* pc)
@@ -147,8 +161,8 @@ void SortContact(struct Contact* pc)
 	}
 	int i, j;
 	struct PeoInfo tmp = { 0 };
-	for(i = 0; i < pc->sz - 1; i++)
-		for(j = 0; j < pc->sz - i - 1; j++)
+	for (i = 0; i < pc->sz - 1; i++)
+		for (j = 0; j < pc->sz - i - 1; j++)
 			if (strcmp(pc->data[j].name, pc->data[j + 1].name) > 0)
 			{
 				tmp = pc->data[j];

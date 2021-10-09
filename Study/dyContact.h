@@ -1,13 +1,14 @@
 #pragma once
 
+#define DEFAULT_SZ 3
 #define NAME_MAX 30
 #define TELE_MAX 12
 #define SEX_MAX 5
 #define ADDR_MAX 30
-#define MAX 10000
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 struct PeoInfo
 {
@@ -20,11 +21,14 @@ struct PeoInfo
 
 struct Contact
 {
-	struct PeoInfo data[MAX];
-	int sz;
+	struct PeoInfo* data;
+	int sz; // 通讯录当前有效元素的个数
+	int capacity; // 通讯录当前最大容量
 };
 // 初始化通讯录
 void InitContact(struct Contact* pc);
+// 销毁通讯录
+void DestoryContact(struct Contact* pc);
 // 增加联系人
 void AddContact(struct Contact* pc);
 // 显示所有联系人
